@@ -106,8 +106,8 @@ function Main({ setSearch ,submitSearch, srcVar , setOrientation , setSrcVar , c
             <a style={{display: nextPage? 'none': '' }} className={style.loadingText}> Your Result Will Be Here </a>
             <div className={style.imageGrid}>
               <div className={style.col1}>
-                {col1.map((a) => (
-                  <div style={{position: 'relative'}} >
+                {col1.map((a , index) => (
+                  <div key={index} style={{position: 'relative'}} >
                   <img className={style.gridImage} onClick={()=>{window.open(`${a.src[srcVar]}`) }} src={`${a.src[srcVar]}`} alt="" />
                   <div className={style.gridImageDetail} >
                     <a href={`${a.photographer_url}`} className={style.gridImageOwener}>Owener: {a.photographer}</a> <br />
@@ -117,8 +117,8 @@ function Main({ setSearch ,submitSearch, srcVar , setOrientation , setSrcVar , c
                 ))}
               </div>
               <div className={style.col1}>
-                {col2.map((a) => (
-                  <div style={{position: 'relative'}} >
+                {col2.map((a,index) => (
+                  <div key={index} style={{position: 'relative'}} >
                     <img className={style.gridImage} onClick={()=>{window.open(`${a.src[srcVar]}`) }} src={`${a.src[srcVar]}`} alt="" />
                     <div className={style.gridImageDetail} >
                       <a href={`${a.photographer_url}`} className={style.gridImageOwener}>Owener: {a.photographer}</a> <br />
@@ -128,8 +128,8 @@ function Main({ setSearch ,submitSearch, srcVar , setOrientation , setSrcVar , c
                 ))}
               </div>
               <div className={style.col1}>
-                {col3.map((a) => (
-                  <div style={{position: 'relative'}} >
+                {col3.map((a , index) => (
+                  <div key={index} style={{position: 'relative'}} >
                   <img className={style.gridImage} onClick={()=>{window.open(`${a.src[srcVar]}`) }} src={`${a.src[srcVar]}`} alt="" />
                   <div className={style.gridImageDetail} >
                     <a href={`${a.photographer_url}`} className={style.gridImageOwener}>Owener: {a.photographer}</a> <br />
