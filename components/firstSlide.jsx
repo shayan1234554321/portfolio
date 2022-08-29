@@ -3,7 +3,7 @@ import style from '../styles/component_scss/Component.module.scss'
 import Shayan from '../public/shayan.js'
 import Desktop from '../elements/Desktop'
 import Mobile from '../elements/Mobile'
-import shayan from '../public/shayan.JPG'
+import shayan from '../public/shayan.jpg'
 
 const ExperienceComponent = ({years , name}) =>{
   return (
