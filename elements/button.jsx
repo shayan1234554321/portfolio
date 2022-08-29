@@ -10,7 +10,7 @@ function Button({icon, fun , Default=true  , dark=false , light=false , custom=f
       <span className={styles.buttonText} >
         {children}
       </span>
-      { icon && <img src={icon.src} className={styles.buttonIcon} /> }
+      { icon && <img alt='' src={icon.src} className={styles.buttonIcon} /> }
       </div>
       <div className={styles.buttonHover}>{children}</div>
      </div> }
@@ -20,7 +20,7 @@ function Button({icon, fun , Default=true  , dark=false , light=false , custom=f
       <span className={styles.buttonText} >
         {children}
       </span>
-      { icon && <img src={icon.src} className={styles.buttonIcon} /> }
+      { icon && <img alt='' src={icon.src} className={styles.buttonIcon} /> }
       </div>
       <div className={`${styles.buttonHover} ${styles.buttonHoverDark} `}>{children}</div>
      </div> }
@@ -30,7 +30,7 @@ function Button({icon, fun , Default=true  , dark=false , light=false , custom=f
       <span className={styles.buttonText} >
         {children}
       </span>
-      { icon && <img src={icon.src} className={styles.buttonIcon} /> }
+      { icon && <img alt='' src={icon.src} className={styles.buttonIcon} /> }
       </div>
       <div className={`${styles.buttonHover} ${styles.buttonHoverLight} `}>{children}</div>
      </div> }
@@ -39,7 +39,7 @@ function Button({icon, fun , Default=true  , dark=false , light=false , custom=f
       <span className={styles.buttonText} >
         {children}
       </span>
-      { icon && <img src={icon.src} className={styles.buttonIcon} /> }
+      { icon && <img alt='' src={icon.src} className={styles.buttonIcon} /> }
       </div>
       <div className={`${styles.buttonHover} ${styles.buttonHoverCustom} `}>{children}</div>
      </div> }

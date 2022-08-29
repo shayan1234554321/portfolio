@@ -8,12 +8,12 @@ function IconButton({icon , active , index , setActive=(()=>{})}) {
     <>
     <Desktop>
       <div onClick={()=>{setActive(index)}} className={`${style.iconButton} ${active? style.iconButtonActive : "" } `} >
-          <img src={icon.src} className={style.icon} />
+          <img alt='' src={icon.src} className={style.icon} />
       </div>
     </Desktop>
     <Mobile>
       <div onClick={()=>{setActive(index)}} className={`${style.iconButtonMob} ${active? style.iconButtonActive : "" } `} >
-          <img src={icon.src} className={style.icon} />
+          <img alt='' src={icon.src} className={style.icon} />
       </div>
     </Mobile>
     </>

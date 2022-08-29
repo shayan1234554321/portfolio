@@ -10,7 +10,7 @@ const ExpertiseCard = ({icon , name , perc , details }) =>{
     return (
         <div className={style.expertiseCard}>        
             <div className={style.expertiseCircle}>
-                <img className={style.icon} src={icon.src} />
+                <img alt='' className={style.icon} src={icon.src} />
             </div>
             <div className={style.expertiseRight}>
                 <div className={style.expertiseName}>

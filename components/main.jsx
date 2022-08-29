@@ -108,12 +108,12 @@ function Main({ setSearch ,submitSearch, srcVar , setOrientation , setSrcVar , c
               <div className={style.col1}>
                 {col1.map((a , index) => (
                   <div key={index} style={{position: 'relative'}} >
-                  <img className={style.gridImage} onClick={()=>{window.open(`${a.src[srcVar]}`) }} src={`${a.src[srcVar]}`} alt="" />
-                  <div className={style.gridImageDetail} >
-                    <a href={`${a.photographer_url}`} className={style.gridImageOwener}>Owener: {a.photographer}</a> <br />
-                    <a className={style.gridImageText}>{a.alt}</a>
+                    <img className={style.gridImage} onClick={()=>{window.open(`${a.src[srcVar]}`) }} src={`${a.src[srcVar]}`} alt="" />
+                    <div className={style.gridImageDetail} >
+                      <a href={`${a.photographer_url}`} className={style.gridImageOwener}>Owener: {a.photographer}</a> <br />
+                      <a className={style.gridImageText}>{a.alt}</a>
+                    </div>
                   </div>
-                </div>
                 ))}
               </div>
               <div className={style.col1}>
@@ -130,12 +130,12 @@ function Main({ setSearch ,submitSearch, srcVar , setOrientation , setSrcVar , c
               <div className={style.col1}>
                 {col3.map((a , index) => (
                   <div key={index} style={{position: 'relative'}} >
-                  <img className={style.gridImage} onClick={()=>{window.open(`${a.src[srcVar]}`) }} src={`${a.src[srcVar]}`} alt="" />
-                  <div className={style.gridImageDetail} >
-                    <a href={`${a.photographer_url}`} className={style.gridImageOwener}>Owener: {a.photographer}</a> <br />
-                    <a className={style.gridImageText}>{a.alt}</a>
+                    <img className={style.gridImage} onClick={()=>{window.open(`${a.src[srcVar]}`) }} src={`${a.src[srcVar]}`} alt="" />
+                    <div className={style.gridImageDetail} >
+                      <a href={`${a.photographer_url}`} className={style.gridImageOwener}>Owener: {a.photographer}</a> <br />
+                      <a className={style.gridImageText}>{a.alt}</a>
+                    </div>
                   </div>
-                </div>
                 ))}
               </div>
             </div>

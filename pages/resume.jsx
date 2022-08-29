@@ -30,8 +30,8 @@ function Resume() {
               <Menu />
             </div>
             <div className={style.blobs}>
-                <img src={blob.src} className={style.blob1}  />
-                <img src={blob.src} className={style.blob2}  />
+                <img alt='' src={blob.src} className={style.blob1}  />
+                <img alt='' src={blob.src} className={style.blob2}  />
             </div>
             <div className={style.resume} >
                   <div className={style.top}>
@@ -46,7 +46,7 @@ function Resume() {
                     <a>
                       RESUME
                     </a>
-                    <img src={cv.src} className={style.resumeHolder}/>
+                    <img alt='' src={cv.src} className={style.resumeHolder}/>
                   </div>
                   <div className={style.bottom}>
                     <Button fun={goToCv} icon={download} >RESUME</Button>
@@ -56,8 +56,8 @@ function Resume() {
         </Desktop>
         <Mobile>
             <div className={style.blobsMob}>
-                <img src={blob.src} className={style.blob1}  />
-                <img src={blob.src} className={style.blob2}  />
+                <img alt='' src={blob.src} className={style.blob1}  />
+                <img alt='' src={blob.src} className={style.blob2}  />
                 <Menu />
             </div>
             <div className={style.resumeMob} >
@@ -71,7 +71,7 @@ function Resume() {
 
                   </div>
                   <div className={style.mid}>     
-                    <img src={cv.src} className={style.resumeHolder}/>
+                    <img alt='' src={cv.src} className={style.resumeHolder}/>
                   </div>
                   <div className={style.bottom}>
                     <a>

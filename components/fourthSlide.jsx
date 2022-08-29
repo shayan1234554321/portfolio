@@ -48,7 +48,7 @@ function FourthSlide({top}) {
         <div className={style.fourthSlide} >
             <div className={style.heading}>.<p>ABOUT ME</p></div>
             <div className={style.background}></div>
-            <img src={plant.src} className={style.plant} />
+            <img alt='' src={plant.src} className={style.plant} />
             <div className={style.container}>
                 <Tablet />
                 <DetailsContainer />

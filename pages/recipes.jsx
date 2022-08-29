@@ -96,8 +96,8 @@ const Food = () => {
 
         <div className={style.foodDisplay} style={{display: display? 'grid':'none' }} >
           <button className={style.recipesClose} onClick={()=>{setDisplay(false)}} ></button>
-          {recipes.map((recipe)=>(
-            <div className={style.recipeCard} onClick={()=>{window.open(recipe.spoonacularSourceUrl)}} >
+          {recipes.map((recipe , index)=>(
+            <div key={index} className={style.recipeCard} onClick={()=>{window.open(recipe.spoonacularSourceUrl)}} >
               <div className={style.recipeImage} style={{backgroundImage: `url(${recipe.image})`}} ></div>
               <a className={style.recipeText} >
                 {recipe.title} <br /> 

@@ -39,12 +39,12 @@ const Editor = () => {
       <div className={style.editor} >
         <div className={style.editorTop} >        
             <label htmlFor="chooseFile" >
-              <img className={style.upload} src={download.src}/>
+              <img alt='' className={style.upload} src={download.src}/>
             </label>
             <input style={{display: "none"}} id='chooseFile' type="file" accept='image/*' onChange={(e)=>{setImage(URL.createObjectURL(e.target.files[0]))}} /> 
             {
               image &&
-            <img src={download.src} style={{cursor:"pointer"}} onClick={handleDownload} />
+            <img alt='' src={download.src} style={{cursor:"pointer"}} onClick={handleDownload} />
             }
           </div>
           {
@@ -58,7 +58,7 @@ const Editor = () => {
                         saturate(${saturate}%)
                         `
               }} >
-              <img src={image} className={style.editorSize} />
+              <img alt='' src={image} className={style.editorSize} />
           </div>
           :
               <div style={{color: "white" ,  fontFamily: "fantasy" , height: "40vh" }} >Select an image</div>
@@ -71,12 +71,12 @@ const Editor = () => {
               <input className={style.editorSlider} onChange={(e)=>{setGrayscale(e.target.value)}} value={grayscale} style={{display: (select === "greyscale")? 'block':'none' }} type="range" min="0" max="99"  />
               <input className={style.editorSlider} onChange={(e)=>{setsaturate(e.target.value)}} value={saturate} style={{display: (select === "saturate")? 'block':'none' }} type="range" min="0" max="200"  />
               <div className={style.editorSelect}>
-                <img src={brightnessSvg.src} className={style.editorIcon} onClick={()=>{setSelect("brightness")}} />
-                <img src={sepiaSvg.src} className={style.editorIcon} onClick={()=>{setSelect("sepia")}} />
-                <img src={blurSvg.src} className={style.editorIcon} onClick={()=>{setSelect("blur")}} />
-                <img src={contrastSvg.src} className={style.editorIcon} onClick={()=>{setSelect("contrast")}} />
-                <img src={greyScaleSvg.src} className={style.editorIcon} onClick={()=>{setSelect("greyscale")}} />
-                <img src={saturateSvg.src} className={style.editorIcon} onClick={()=>{setSelect("saturate")}} />
+                <img alt='' src={brightnessSvg.src} className={style.editorIcon} onClick={()=>{setSelect("brightness")}} />
+                <img alt='' src={sepiaSvg.src} className={style.editorIcon} onClick={()=>{setSelect("sepia")}} />
+                <img alt='' src={blurSvg.src} className={style.editorIcon} onClick={()=>{setSelect("blur")}} />
+                <img alt='' src={contrastSvg.src} className={style.editorIcon} onClick={()=>{setSelect("contrast")}} />
+                <img alt='' src={greyScaleSvg.src} className={style.editorIcon} onClick={()=>{setSelect("greyscale")}} />
+                <img alt='' src={saturateSvg.src} className={style.editorIcon} onClick={()=>{setSelect("saturate")}} />
               </div>
             </div>
       </div>
