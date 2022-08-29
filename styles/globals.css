@@ -1,26 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root{
+  --colorDark: #2C3333;
+  --colorDark2: #212525;
+  --colorDarkLight: #395B64;
+  --colorLightDark: #A5C9CA;
+  --colorLight: #E7F6F2;
+  --colorMain: #ECF95B;
+  --colorMainLight: #f6fcb2;
+  --font1:'Inter', sans-serif;
+  --font2 : 'Caveat', cursive;
+  --fontSizeSmall : 2vh;
+  --fontSizeSmallMob : 4vw;
+  --fontSizeLargeSmall : 3.5vh;
+  --fontSizeLarge : 5vh;
+  --fontSizeLargeMob : 7vw;
+  --borderRadius: 10px ;
+  --boxShadow: 0px 0px 22px 15px rgba(0,0,0,0.2) ;
+  --boxShadowInside: inset 0px 0px 22px 15px rgba(0,0,0,0.2) ;
+  --borderWidth: 0.4vh ;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--colorDark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--colorDarkLight);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 html,
 body {
+  background-color: var(--colorDark);
+  display: flex;
+  justify-content: center;
+  font-family: var(--font1);
+  color: var(--colorLight);
+}
+
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

@@ -1,0 +1,133 @@
+.buttonBody{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.buttonBody:active{
+    transform: scale(0.9);
+}
+.buttonMain{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.8vh;
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: 1.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0.2vh solid var(--colorMain) ;
+    transition: 0.3s ease-in-out;
+    transform: rotateX(0deg) translateY(0px) ;
+}
+
+.buttonHover{
+    transform: rotateX(-90deg) translateY(-60px) ;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--font1);
+    font-size: 1.7vh;
+    color: var(--colorMain);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 94%;
+    height: 80%;
+    border-radius: 5px;
+    border: 0.2vh solid var(--colorMain) ;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonBody:hover .buttonMain{
+    transform: translateY(20px) rotateX(90deg) ;
+}
+.buttonBody:hover .buttonHover{
+    transform: rotateX(0deg) translateY(0px);
+}
+
+.buttonIcon{
+    background-position: center;
+    background-size: cover;
+    height: 2vh;
+    margin-left: 0.8vh;
+}
+
+.buttonDefault{
+    background-image: linear-gradient(to right, var(--colorMain) , var(--colorMainLight)) ;
+    color: var(--colorDark) ;
+}
+.buttonDark{
+    background-image: linear-gradient(to right, var(--colorDark) , var(--colorDarkLight)) ;
+    color: var(--colorLight) ;
+    border: 0.2vh solid var(--colorDarkLight) ;
+}
+.buttonHoverDark{
+    color: var(--colorLight) ;
+    border: 0.2vh solid var(--colorDarkLight) ;
+}
+.buttonCustom{
+    background-image: linear-gradient(to right, rgb(32, 171, 170)  , rgb(32, 190, 170) ) ;
+    color: var(--colorLight) ;
+    border: 0.2vh solid rgb(32, 171, 170) ;
+}
+.buttonHoverCustom{
+    color: rgb(32, 171, 170) ;
+    border: 0.2vh solid rgb(32, 171, 170) ;
+}
+.buttonLight{
+    background-image: linear-gradient(to right, var(--colorLight) , var(--colorLightDark)) ;
+    color: var(--colorDark) ;
+    border: 0.2vh solid var(--colorLight) ;
+}
+.buttonHoverLight{
+    border: 0.2vh solid var(--colorLight) ;
+    color: var(--colorLight) ;
+
+}
+
+.iconButton{
+    cursor: pointer;
+    width: 6vh;
+    height: 6vh;
+    background-color: var(--colorLight);
+    margin: 10px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--boxShadow);
+    transition: 0.3s;
+}
+.iconButtonMob{
+    cursor: pointer;
+    width: 8vw;
+    height: 8vw;
+    background-color: var(--colorLight);
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--boxShadow);
+    transition: 0.3s;
+}
+.iconButtonActive{
+    box-shadow: 0px 0px 22px 10px rgba(255, 255, 255, 0.2) ;
+}
+.iconButton:active{
+    transform: scale(0.7);
+}
+.iconButton .icon{
+    height:  50% ;
+}
+.iconButtonMob .icon{
+    height:  50% ;
+}

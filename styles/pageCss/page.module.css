@@ -1,0 +1,937 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+.blobs {
+  width: 100%;
+  height: 140vh;
+}
+.blobs .blob1 {
+  left: -20%;
+  top: -30%;
+  position: absolute;
+  height: 60vw;
+  max-height: 80vh;
+  transform: rotateZ(-40deg);
+}
+.blobs .blob2 {
+  right: -30%;
+  top: -50%;
+  position: absolute;
+  height: 100vw;
+  max-height: 140vh;
+  transform: rotateZ(20deg);
+}
+@media only screen and (max-width: 850px) {
+  .blobs .blob1 {
+    top: -30%;
+  }
+  .blobs .blob2 {
+    top: -50%;
+  }
+}
+
+.blobsMob {
+  width: 100%;
+}
+.blobsMob .blob1 {
+  position: absolute;
+  width: 27vh;
+  transform: rotateZ(-40deg);
+  left: -30%;
+  top: -17vh;
+}
+.blobsMob .blob2 {
+  position: absolute;
+  right: -55%;
+  top: -35vh;
+  width: 55vh;
+  transform: rotateZ(10deg);
+}
+
+.resume {
+  pointer-events: none;
+  width: 100%;
+  top: 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+}
+.resume .top {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vh;
+  width: 80vw;
+}
+.resume .top .p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: var(--fontSizeSmall);
+  letter-spacing: 3px;
+}
+.resume .top .p .engineer {
+  color: var(--colorMain);
+}
+.resume .top .p .a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: var(--fontSizeLarge);
+  letter-spacing: 6px;
+}
+.resume .top .image {
+  width: 30vh;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  filter: contrast(0.9) saturate(1.2);
+  border: 3px solid var(--colorLight);
+}
+.resume .mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.resume .mid a {
+  transform: translateY(40%);
+  font-size: 7vh;
+  letter-spacing: 20px;
+  color: var(--colorLightDark);
+}
+.resume .mid .resumeHolder {
+  width: 60vw;
+  max-width: 80vh;
+}
+.resume .bottom {
+  pointer-events: all;
+  transform: translateY(-50%);
+  width: 65vw;
+  max-width: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign {
+  width: 20vh;
+  transform: translateY(-30%);
+  stroke-dasharray: 1761;
+  stroke-dashoffset: 1000;
+}
+
+.resumeMob {
+  pointer-events: none;
+  width: 100%;
+  top: 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+}
+.resumeMob .top {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vh;
+  width: 80vw;
+}
+.resumeMob .top .p {
+  font-size: 3vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  letter-spacing: 3px;
+}
+.resumeMob .top .p .engineer {
+  color: var(--colorMain);
+}
+.resumeMob .top .p .a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 5vw;
+  letter-spacing: 6px;
+}
+.resumeMob .top .image {
+  width: 15vh;
+  aspect-ratio: 1/1;
+  background-color: black;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  filter: contrast(0.9) saturate(1.2);
+  border: 3px solid var(--colorLight);
+}
+.resumeMob .mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.resumeMob .mid .resumeHolder {
+  width: 60vw;
+  max-width: 80vh;
+  filter: blur(3px) brightness(0.7);
+}
+.resumeMob .bottom {
+  transform: translateY(-50%);
+  width: 65vw;
+  max-width: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.resumeMob .bottom a {
+  font-size: 5vw;
+  letter-spacing: 2px;
+  color: var(--colorMain);
+  margin-bottom: 10px;
+}
+.resumeMob .bottom .sign {
+  margin-top: 60px;
+  width: 13vh;
+  transform: translateY(-30%);
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contactForm {
+  position: absolute;
+  color: var(--colorDark);
+  left: 0;
+  margin-left: 10%;
+  height: 75vh;
+  width: 70vh;
+  background-color: var(--colorLight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--borderRadius);
+}
+.contact .contactForm form {
+  width: 80%;
+}
+.contact .contactForm header {
+  margin: 2vh 0;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3px;
+  font-size: var(--fontSizeLarge);
+  text-align: center;
+}
+.contact .contactForm header a {
+  letter-spacing: 6px;
+  font-size: 1.3vh;
+  opacity: 0.7;
+}
+.contact .contactForm .input {
+  margin: 1vh 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contactForm .input input {
+  color: white;
+  outline: none;
+  width: 55%;
+  padding: 0.8vh;
+  border-radius: var(--borderRadius);
+  background-color: var(--colorDark);
+}
+.contact .contactForm .input .area {
+  height: 20vh;
+}
+.contact .contactForm .button {
+  display: none;
+}
+.contact .contactForm .buttonContainer {
+  margin-left: 80%;
+  margin-top: 5%;
+}
+.contact .background {
+  width: 60vw;
+  aspect-ratio: 1/1;
+  max-width: 60vh;
+  margin-right: 5%;
+  position: relative;
+  -webkit-animation: background 5s ease-in-out;
+          animation: background 5s ease-in-out;
+}
+.contact .background .circle {
+  aspect-ratio: 1/1;
+  position: absolute;
+  border-radius: 50%;
+}
+.contact .background .circle1 {
+  transform: rotatez(-120deg);
+  width: 50%;
+  background-image: linear-gradient(to left, rgba(32, 171, 196, 0.8), rgba(32, 171, 196, 0.24), rgba(32, 171, 196, 0));
+}
+.contact .background .circle2 {
+  transform: rotatez(-60deg);
+  right: 25%;
+  top: 5%;
+  background-image: linear-gradient(to left, rgba(32, 196, 180, 0.8), rgba(32, 171, 180, 0.24), rgba(32, 171, 180, 0));
+  width: 40%;
+}
+.contact .background .circle3 {
+  transform: rotatez(120deg);
+  background-image: linear-gradient(to left, rgba(32, 171, 190, 0.8), rgba(32, 171, 190, 0.24), rgba(32, 171, 190, 0));
+  bottom: 15%;
+  left: 2%;
+  width: 40%;
+}
+.contact .background .circle4 {
+  transform: rotatez(30deg);
+  background-image: linear-gradient(to left, rgba(32, 171, 220, 0.8), rgba(32, 170, 220, 0.169), rgba(32, 171, 220, 0));
+  right: 15%;
+  bottom: 10%;
+  width: 52%;
+}
+@-webkit-keyframes background {
+  0% {
+    opacity: 0;
+    transform: rotateZ(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes background {
+  0% {
+    opacity: 0;
+    transform: rotateZ(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(360deg);
+  }
+}
+
+.contactMob {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactMob .contactForm {
+  margin-top: 100px;
+  color: var(--colorDark);
+  height: 75vh;
+  width: 90%;
+  background-color: var(--colorLight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--borderRadius);
+}
+.contactMob .contactForm form {
+  width: 80%;
+}
+.contactMob .contactForm header {
+  margin: 30px 0;
+  letter-spacing: 3px;
+  font-size: var(--fontSizeLargeMob);
+  text-align: center;
+}
+.contactMob .contactForm .input {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contactMob .contactForm .input input {
+  color: white;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: var(--borderRadius);
+  background-color: var(--colorDark);
+}
+.contactMob .contactForm .input .area {
+  height: 20vh;
+}
+.contactMob .contactForm .buttonContainer {
+  transform: translateX(-20%);
+  margin-left: 50%;
+}
+.contactMob a {
+  font-size: 3vw;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.food {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.food .foodLayer {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food .foodLayer .burgerText {
+  position: absolute;
+  pointer-events: all;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+.food .foodLayer .foodImage {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  width: 46vh;
+  height: 35vh;
+}
+.food .foodLayer .foodImage:nth-child(2) {
+  width: 13vh;
+  height: 13vh;
+  right: 10vw;
+}
+.food .foodLayer .foodImage:nth-child(3) {
+  width: 15vh;
+  height: 15vh;
+  right: 30vw;
+  bottom: 10vh;
+}
+.food .foodLayer .foodImage:nth-child(4) {
+  width: 13vh;
+  height: 13vh;
+  right: 30vw;
+  top: 15vh;
+}
+.food .foodLayer .foodText {
+  cursor: pointer;
+  pointer-events: all;
+  text-align: center;
+  position: absolute;
+  left: 5vh;
+  bottom: 5vh;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.food .foodLayer .foodText .spoonacular {
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
+}
+.food .foodSearch {
+  position: relative;
+  z-index: 20;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  width: 220px;
+  height: 50px;
+  border: 4px solid white;
+  background-color: black;
+  outline: none;
+  color: white;
+  padding-left: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.food .foodDisplay {
+  z-index: 7;
+  background-color: white;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  width: calc(90% - 20px);
+  height: 70vh;
+  border-radius: 5px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+  overflow: scroll;
+  position: relative;
+}
+.food .foodDisplay .recipesClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.food .foodDisplay .recipesClose::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.527);
+  top: calc(50% - 5px);
+  transform: rotateZ(45deg);
+}
+.food .foodDisplay .recipesClose::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.507);
+  top: calc(50% - 5px);
+  transform: rotateZ(-45deg);
+}
+
+.recipeCard {
+  cursor: pointer;
+  margin: 10px;
+  width: 100%;
+  height: 45vh;
+  box-shadow: -7px -7px 20px 0px rgb(255, 255, 255), -4px -4px 5px 0px rgb(255, 255, 255), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  display: flex;
+  flex-direction: column;
+}
+.recipeCard .recipeImage {
+  margin-left: 5%;
+  width: 90%;
+  height: 25vh;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.recipeCard .recipeText {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: large;
+}
+.recipeCard .recipeSmallText {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.705);
+  font-family: "Roboto", sans-serif;
+}
+
+.food::after {
+  content: "";
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  background-color: rgb(255, 189, 111);
+  left: 50vw;
+  z-index: 0;
+}
+
+@media (max-aspect-ratio: 5/4) {
+  .foodDisplay {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-aspect-ratio: 4/5) {
+  .foodDisplay {
+    grid-template-columns: 1fr !important;
+  }
+}
+.wallpaper .front {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  transition: 1.5s ease-in-out;
+  z-index: 20;
+}
+.wallpaper .front .frontButton {
+  position: relative;
+  margin-bottom: 8vh;
+  margin-top: 8vh;
+  z-index: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.wallpaper .front .frontButton, .wallpaper .front .frontButton:after {
+  padding: 2vh;
+  padding-left: 4vh;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-align: center;
+  font-size: 3vh;
+  cursor: pointer;
+}
+.wallpaper .front .frontButton:after {
+  content: "EXPLORE";
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+.wallpaper .front .frontButton:hover::after {
+  top: 0vh;
+}
+.wallpaper .front .frontText {
+  cursor: default;
+  color: white;
+  letter-spacing: 20px;
+  font-size: 2vh;
+  margin-top: 2vh;
+  font-family: "Oswald", sans-serif;
+}
+.wallpaper .wallMain {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wallpaper .wallMain .wallTop {
+  width: 100%;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+.wallpaper .wallMain .wallTop .searchBox {
+  padding: 10px;
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+}
+.wallpaper .wallMain .wallTop .searchBox .searchInput {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  font-weight: bold;
+  width: 100%;
+}
+.wallpaper .wallMain .wallTop .searchBox .searchIcon {
+  width: 20%;
+  aspect-ratio: 1/1;
+  border: 0.4vh solid black;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.wallpaper .wallMain .wallTop .searchBox .searchIcon::before {
+  content: "";
+  width: 15%;
+  aspect-ratio: 1/3;
+  background-color: black;
+  position: absolute;
+  right: -20%;
+  bottom: -20%;
+  transform: rotateZ(-45deg);
+}
+.wallpaper .wallMain .wallMid {
+  margin: 20px;
+  width: 100%;
+  padding-left: 4%;
+}
+.wallpaper .wallMain .wallMid a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.wallpaper .wallMain .wallMid .orientationIcons {
+  display: flex;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  margin-right: 20px;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon .orienIconInner {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 3px solid white;
+  left: 20%;
+  top: 20%;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon::after {
+  content: "Landscape";
+  position: absolute;
+  background-color: white;
+  bottom: -40px;
+  color: black;
+  left: -20px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
+  display: none;
+  z-index: 5;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon:nth-child(2)::after {
+  content: "Portrait";
+  left: -10px;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon:nth-child(3)::after {
+  content: "Normal";
+  left: -5px;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon:hover::after {
+  display: block;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon:nth-child(1) .orienIconInner {
+  height: 25%;
+  top: 30%;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon:nth-child(2) .orienIconInner {
+  width: 25%;
+  left: 30%;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon:hover {
+  background-color: white;
+}
+.wallpaper .wallMain .wallMid .orientationIcons .orienIcon:hover .orienIconInner {
+  border: 3px solid black;
+}
+.wallpaper .wallMain .wallBottom {
+  position: relative;
+  width: 95%;
+  background-color: white;
+  border-radius: 5px;
+  height: 70vh;
+  padding: 10px;
+}
+.wallpaper .wallMain .wallBottom .imageGrid {
+  overflow: scroll;
+  overflow-x: hidden;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 65vh;
+  margin-bottom: 5px;
+}
+.wallpaper .wallMain .wallBottom .imageGrid .col1, .wallpaper .wallMain .wallBottom .imageGrid .col2, .wallpaper .wallMain .wallBottom .imageGrid .col3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wallpaper .wallMain .wallBottom .imageGrid .col1 .gridImageDetail, .wallpaper .wallMain .wallBottom .imageGrid .col2 .gridImageDetail, .wallpaper .wallMain .wallBottom .imageGrid .col3 .gridImageDetail {
+  position: absolute;
+  bottom: 14px;
+  width: calc(100% - 20px);
+  background-color: rgba(0, 0, 0, 0.418);
+  padding: 10px;
+  opacity: 0;
+}
+.wallpaper .wallMain .wallBottom .imageGrid .col1 .gridImageDetail a, .wallpaper .wallMain .wallBottom .imageGrid .col2 .gridImageDetail a, .wallpaper .wallMain .wallBottom .imageGrid .col3 .gridImageDetail a {
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+.wallpaper .wallMain .wallBottom .imageGrid .col1 .gridImage, .wallpaper .wallMain .wallBottom .imageGrid .col2 .gridImage, .wallpaper .wallMain .wallBottom .imageGrid .col3 .gridImage {
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.wallpaper .wallMain .wallBottom .imageGrid .col1 .gridImage:hover + .gridImageDetail, .wallpaper .wallMain .wallBottom .imageGrid .col2 .gridImage:hover + .gridImageDetail, .wallpaper .wallMain .wallBottom .imageGrid .col3 .gridImage:hover + .gridImageDetail {
+  opacity: 1;
+}
+.wallpaper .wallMain .wallBottom .imageGrid .col1 .gridImageDetail:hover, .wallpaper .wallMain .wallBottom .imageGrid .col2 .gridImageDetail:hover, .wallpaper .wallMain .wallBottom .imageGrid .col3 .gridImageDetail:hover {
+  opacity: 1;
+}
+.wallpaper .wallMain .wallBottom .nextPageButton {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  max-width: 300px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+.wallpaper .wallMain .wallBottom .loadingScreen {
+  position: absolute;
+  width: 98%;
+  height: 96%;
+  background-color: rgba(0, 0, 0, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wallpaper .wallMain .wallBottom .loadingScreen .loadingCircle1, .wallpaper .wallMain .wallBottom .loadingScreen .loadingCircle2, .wallpaper .wallMain .wallBottom .loadingScreen .loadingCircle3 {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+}
+.wallpaper .wallMain .wallBottom .loadingScreen .loadingCircle1 {
+  -webkit-animation: firstDot 3s ease-in-out infinite;
+          animation: firstDot 3s ease-in-out infinite;
+}
+.wallpaper .wallMain .wallBottom .loadingScreen .loadingCircle2 {
+  margin: 0 20px;
+  -webkit-animation: secondDot 3s ease-in-out infinite;
+          animation: secondDot 3s ease-in-out infinite;
+}
+.wallpaper .wallMain .wallBottom .loadingScreen .loadingCircle3 {
+  -webkit-animation: thirdDot 3s ease-in-out infinite;
+          animation: thirdDot 3s ease-in-out infinite;
+}
+.wallpaper .wallMain .wallBottom .loadingText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50px);
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+.wallpaper .wallMain .wallBottom::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+.wallpaper .wallMain .wallBottom::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: white;
+}
+.wallpaper .wallMain .wallBottom::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: black;
+}
+
+@media (max-aspect-ratio: 4/5) {
+  .frontText {
+    letter-spacing: 8px !important;
+  }
+  .searchBox {
+    width: 50% !important;
+  }
+  .pixelLogo {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .wallBottom {
+    width: 80% !important;
+  }
+  .wallBottom .imageGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.editor {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.editor .upload {
+  cursor: pointer;
+  width: 25px;
+  transform: rotateZ(180deg);
+}
+.editor .editorPhoto {
+  background-position: center;
+  background-size: cover;
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+.editor .editorPhoto .editorSize {
+  height: 60vh;
+}
+.editor .editorBottom {
+  position: relative;
+  bottom: 90px;
+}
+.editor .editorBottom .editorSelect {
+  position: absolute;
+  left: 50%;
+  background-color: white;
+  border-radius: 40px;
+  transform: translateX(-210px);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.editor .editorBottom .editorSelect .editorIcon {
+  cursor: pointer;
+  position: relative;
+  margin: 20px 20px;
+  height: 30px;
+}
+.editor .editorBottom .editorSlider {
+  cursor: pointer;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+@media (max-aspect-ratio: 4/5) {
+  .editorSlider {
+    width: 250px !important;
+  }
+  .editorIcon {
+    margin: 10px 10px !important;
+    font-size: 20px !important;
+  }
+  .editorSelect {
+    left: 85% !important;
+  }
+  .editorSize {
+    height: 40vh !important;
+  }
+}/*# sourceMappingURL=page.module.css.map */
