@@ -35,9 +35,9 @@ function FirstSlide() {
             <div className={`${style.largeFont} ${style.experience}`}>
             <span>Learning</span>
             <div className={style.experienceComponents} >
-              <ExperienceComponent name="Javascript" years="2" />
-              <ExperienceComponent name="HTML + CSS" years="2" />  
-              <ExperienceComponent name="React.js" years="1.5" />  
+              <ExperienceComponent name="Javascript" years="2.5" />
+              <ExperienceComponent name="HTML + CSS" years="2.5" />  
+              <ExperienceComponent name="React.js" years="2" />  
             </div>
             </div>
           </div>

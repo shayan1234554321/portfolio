@@ -27,7 +27,7 @@ const DetailsContainer = () =>{
       }
     return (
         <div className={style.detailsContainer}>
-            <div className={style.details} ><a className={style.detailsA} >I AM</a> <p className={style.detailsP} >I am from Pakistan . Getting my Computer Science Bachelor degree from City University of Science and Technology of Peshawar</p> </div>
+            <div className={style.details} ><a className={style.detailsA} >I AM</a> <p className={style.detailsP} >I am from Pakistan . Providing services of the market current most demanding Front End technology Next.js / React.js</p> </div>
             <div className={style.details} ><p className={style.detailsP} >I am looking for remote based React Job and would love to put my efforts in contributing in a company. I am comfortable in working in almost all work schedules .</p><a className={style.detailsA} >LOOKING FOR</a></div>
             <div className={style.button}>
                 <Button dark icon={certify} fun={goToResume} >RESUME</Button>

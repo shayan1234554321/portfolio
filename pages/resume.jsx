@@ -7,12 +7,12 @@ import Mobile from '../elements/Mobile'
 import Button from '../elements/button'
 import download from '../public/icons/download.svg'
 import cv from '../public/cv.jpg'
-import shayan from '../public/shayan2.jpg'
+import shayan from '../public/shayan2.jpeg'
 import Sign from '../public/sign'
 import Head from "next/head";
 import Menu from '../components/menu'
 
-const cvLink = "https://docs.google.com/document/d/1o5Ez78Z7w39cZ2mDgLCFGKUZ6bz8HuYY/edit?usp=sharing&ouid=101156306051286708216&rtpof=true&sd=true"
+const cvLink = "https://docs.google.com/document/d/10tntZQ5PIt54Qikpvht0tLixE9nouJvW/edit?usp=sharing&ouid=101156306051286708216&rtpof=true&sd=true"
 
 function Resume() {
 
