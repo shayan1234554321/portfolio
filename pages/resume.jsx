@@ -12,7 +12,7 @@ import Sign from '../public/sign'
 import Head from "next/head";
 import Menu from '../components/menu'
 
-const cvLink = "https://docs.google.com/document/d/1yxqgxfBkxTRi8k6IqXbVoS-z4DkQ4NP-/edit?usp=sharing&ouid=101156306051286708216&rtpof=true&sd=true"
+const cvLink = "https://docs.google.com/document/d/1QdmWbS9uFi7JerSAg0ytfN0SH1xyBGP-/edit?usp=sharing&ouid=101156306051286708216&rtpof=true&sd=true"
 
 function Resume() {
 
