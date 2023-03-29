@@ -1,34 +1,165 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<!-- TABLE OF CONTENTS -->
 
-First, run the development server:
+# 📗 Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- PROJECT DESCRIPTION -->
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# 📖 [Shayan Portfolio] <a name="about-project"></a>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+> This website is a Portfolio website of a person named Shayan
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🛠 Built With <a name="built-with"></a>
 
-## Learn More
+### Tech Stack <a name="tech-stack"></a>
 
-To learn more about Next.js, take a look at the following resources:
+> Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://nextjs.org/">Next.js</a></li>
+  </ul>
+</details>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a>No server</a></li>
+  </ul>
+</details>
 
-## Deploy on Vercel
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a>No Database</a></li>
+  </ul>
+</details>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- Features -->
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Key Features <a name="key-features"></a>
+
+> All details required as CV is added to the website
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> shayanpk.ml
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+### Prerequisites
+
+In order to run this project you need:
+
+to clone this project
+
+### Setup
+
+Clone this repository to your desired folder:
+
+git clone [https://github.com/shayan1234554321/Portfolio_.git](https://github.com/shayan1234554321/portfolio)
+
+### Install
+
+Install this project with:
+
+yarn install
+
+### Usage
+
+To run the project, execute the following command:
+
+yarn run dev
+
+### Run tests
+
+No tests
+
+### Deployment
+
+You can deploy this project using:
+
+Get a hosting website and give all of the github files
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 Shayan
+
+- GitHub: [@githubhandle](https://github.com/shayan1234554321)
+- Twitter: [@twitterhandle](https://twitter.com/shayan123455432)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shayan-khan20/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Not features in near future
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+As its my personal portfolio , no contributions are rquired
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please leave a ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+None
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
