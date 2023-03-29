@@ -12,7 +12,7 @@ import Sign from '../public/sign'
 import Head from "next/head";
 import Menu from '../components/menu'
 
-const cvLink = "https://docs.google.com/document/d/1QdmWbS9uFi7JerSAg0ytfN0SH1xyBGP-/edit?usp=sharing&ouid=101156306051286708216&rtpof=true&sd=true"
+const cvLink = "https://docs.google.com/document/d/1suOj6Au2deYOatH0CztBC6hOOHrvz3m_-jSLRA5vdPI/edit?usp=sharing"
 
 function Resume() {
 
@@ -37,7 +37,7 @@ function Resume() {
                   <div className={style.top}>
                     <div className={style.p}>
                       <div className={style.a} >SHAYAN KHAN</div> <br />
-                      REACT JS <span className={style.engineer} >ENGINEER</span>
+                      FULL STACK <span className={style.engineer} >ENGINEER</span>
                     </div>
                     <div style={{backgroundImage: `url(${shayan.src})`}} className={style.image}>
                     </div>
@@ -64,7 +64,7 @@ function Resume() {
                   <div className={style.top}>
                     <div className={style.p}>
                       <div className={style.a} >SHAYAN KHAN</div> <br />
-                      REACT JS <span className={style.engineer} >ENGINEER</span>
+                      FULL STACK <span className={style.engineer} >ENGINEER</span>
                     </div>
                     <div style={{backgroundImage: `url(${shayan.src})`}} className={style.image}>
                     </div>
@@ -77,7 +77,7 @@ function Resume() {
                     <a>
                       RESUME
                     </a>
-                    <Button icon={download} >RESUME</Button>
+                    <Button fun={goToCv} icon={download} >RESUME</Button>
                     <Sign />
                   </div>
             </div>

@@ -30,14 +30,14 @@ function FirstSlide() {
               I AM 
               <Shayan />
             </span>
-            <span className={style.lightFont} >A REACT FRONTEND SOFTWARE DEVELOPER <br />YES ! THE <b>COOL</b> GUY ON THE LEFT IS ME <br /> <br />CURRENTLY HIRED AS A JUNIOR NEXT.js <br />DEVELOPER </span>
+            <span className={style.lightFont} >A FULL STACK SOFTWARE DEVELOPER <br />YES ! THE <b>COOL</b> GUY ON THE LEFT IS ME <br /> <br />CURRENTLY HIRED AS SENIOR FULL-STACK<br />DEVELOPER </span>
             <div className={style.mouse}></div>
             <div className={`${style.largeFont} ${style.experience}`}>
             <span>Learning</span>
             <div className={style.experienceComponents} >
-              <ExperienceComponent name="Javascript" years="2.5" />
-              <ExperienceComponent name="HTML + CSS" years="2.5" />  
-              <ExperienceComponent name="React.js" years="2" />  
+              <ExperienceComponent name="React/Next" years="2.5" />
+              <ExperienceComponent name="Node.js" years="1.5" />  
+              <ExperienceComponent name="HTML + CSS" years="2.9" />  
             </div>
             </div>
           </div>
